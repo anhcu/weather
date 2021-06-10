@@ -7,7 +7,7 @@ let cs = "";
 
 // let = whyisthisnotworking
 const requestCity = async (zip) => {
-    const baseURL = 'http://api.openweathermap.org/data/2.5/weather'
+    const baseURL = 'https://api.openweathermap.org/data/2.5/weather'
     const query = `?zip=${zip}&units=imperial&us&appid=${API_Key}`;
 
     // http://api.openweathermap.org/data/2.5/weather?zip=30033&units=imperial&us&appid=d0521b9849b489989b94ed5dc75d1ee0
@@ -38,7 +38,7 @@ updateWeatherApp = (zip) => {
 
     
     //icon for weather
-    const iconSrc = `http://openweathermap.org/img/wn/${zip.weather[0].icon}.png`
+    const iconSrc = `https://openweathermap.org/img/wn/${zip.weather[0].icon}.png`
 
     // function convertToF(celsius) {
     //     return celsius * 9/5 + 32
